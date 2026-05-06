@@ -1,18 +1,16 @@
-company_name,website,location,industry,career_page_url,priority_tier,notes
-Alteryx,https://www.alteryx.com,Irvine CA,Analytics/SaaS,,1,Strong fit for frontend/fullstack/product work
-CrowdStrike,https://www.crowdstrike.com,Irvine CA,Cybersecurity,,1,Strong engineering brand
-Acorns,https://www.acorns.com,Irvine CA,Fintech,,1,Good consumer product/frontend relevance
-Blizzard Entertainment,https://www.blizzard.com,Irvine CA,Gaming,,2,Brand name and product engineering relevance
-Rivian,https://www.rivian.com,Irvine CA,EV/Software,,2,Possible web/platform roles
-Anduril,https://www.anduril.com,Irvine CA,Defense Tech,,2,Interesting technical environment
-Pacific Life,https://www.pacificlife.com,Newport Beach CA,Insurance/Finance,,2,Nearby and enterprise engineering opportunities
-loanDepot,https://www.loandepot.com,Irvine CA,Fintech/Mortgage,,2,Local employer with product teams
-TP-Link Systems,https://www.tp-link.com,Irvine CA,Networking/Consumer Tech,,2,Possible frontend/product roles
-Vizio,https://www.vizio.com,Irvine CA,Consumer Electronics,,2,Product/platform relevance
-Edwards Lifesciences,https://www.edwards.com,Irvine CA,MedTech,,2,Large local employer
-Experian,https://www.experian.com,Costa Mesa CA,Data/Finance,,2,Nearby enterprise tech
-Ingram Micro,https://www.ingrammicro.com,Irvine CA,Technology Distribution,,3,Large local company
-CoreLogic,https://www.corelogic.com,Irvine CA,Property Data/Software,,3,Data/software relevance
-Mazda North American Operations,https://www.mazdausa.com,Irvine CA,Automotive,,3,Corporate digital roles possible
-Kia America,https://www.kia.com,Irvine CA,Automotive,,3,Corporate web/product roles possible
-Masimo,https://www.masimo.com,Irvine CA,Medical Technology,,3,Medtech engineering presence
+name,website_url,careers_url,linkedin_url,location_city,location_state,country,industry,company_size,notes,is_target
+Anduril,https://www.anduril.com,https://www.anduril.com/careers,,Irvine,CA,USA,Defense Tech / AI,Large,Strong target for modern software and platform engineering,true
+CrowdStrike,https://www.crowdstrike.com,https://www.crowdstrike.com/en-us/careers/,,Irvine,CA,USA,Cybersecurity / AI,Large,Strong target for frontend platform and cloud product roles,true
+Blizzard Entertainment,https://www.blizzard.com,https://careers.blizzard.com/global/en/irvine,,Irvine,CA,USA,Gaming,Large,Strong target for frontend UI and product-adjacent roles,true
+Viant Technology,https://www.viantinc.com,https://www.viantinc.com/company/careers/,,Irvine,CA,USA,AdTech / Digital Media,Mid-size,Interesting for data-heavy product and dashboard work,true
+Irvine Company,https://www.irvinecompany.com,https://careers.irvinecompany.com/,,Irvine,CA,USA,Real Estate / Property Tech,Large,Local employer with corporate and digital roles,true
+Rivian,https://www.rivian.com,https://careers.rivian.com/,,Irvine,CA,USA,Automotive / EV / Software,Large,Interesting if product web or internal tools roles appear,true
+Alteryx,https://www.alteryx.com,,,"Irvine",CA,USA,Analytics / Big Data,Large,Strong fit for frontend/fullstack/product work,true
+Cloudvirga,https://www.cloudvirga.com,,,"Irvine",CA,USA,Fintech / Mortgage Software,Mid-size,Relevant fintech SaaS target,true
+Better,https://better.com,,,"Irvine",CA,USA,Fintech / Real Estate Tech,Large,Include for mortgage and digital lending roles,true
+Endpoint,https://www.endpoint.com,,,"Irvine",CA,USA,Real Estate Tech,Mid-size,Interesting product and workflow software company,true
+PatientFi,https://www.patientfi.com,,,"Irvine",CA,USA,Fintech / Healthcare Payments,Small,Good target for product-focused frontend roles,true
+Chargezoom,https://www.chargezoom.com,,,"Irvine",CA,USA,B2B Payments / SaaS,Small,Good SaaS target with payments domain,true
+EBizCharge,https://ebizcharge.com,,,"Irvine",CA,USA,Payments / Fintech,Mid-size,Relevant B2B payments company,true
+Octane,https://www.octane.co,,,"Irvine",CA,USA,Fintech / Software,Mid-size,Good fit for product engineering and platform roles,true
+Tenant Inc.,https://www.tenantinc.com,,https://www.linkedin.com/company/tenant-inc,Irvine,CA,USA,Software / PropTech,Mid-size,PropTech SaaS company with Irvine presence,true

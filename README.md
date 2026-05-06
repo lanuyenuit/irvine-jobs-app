@@ -64,4 +64,4 @@ docs/
 
 data/
   seed/
-  sample/
+  sample/# job-intelligence
