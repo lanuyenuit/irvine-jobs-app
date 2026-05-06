@@ -20,10 +20,21 @@ const ACCESS_TOKEN_TTL = "15m";
 const REFRESH_TOKEN_TTL_MS = 7 * 24 * 60 * 60 * 1000; // 7 days
 
 const app = express();
-const PORT = process.env.API_PORT || 3001;
-app.use(cors({ origin: "http://localhost:5173", credentials: true }));
+const PORT = process.env.PORT || process.env.API_PORT || 3001;
+const isProd = process.env.NODE_ENV === "production";
+const corsOrigin = process.env.CORS_ORIGIN
+  ? process.env.CORS_ORIGIN.split(",").map((s) => s.trim())
+  : "http://localhost:5173";
+app.use(cors({ origin: corsOrigin, credentials: true }));
 app.use(express.json());
 app.use(cookieParser());
+
+const refreshCookieOptions = {
+  httpOnly: true,
+  sameSite: isProd ? "none" : "lax",
+  secure: isProd,
+  path: "/api/auth",
+};
 
 const pool = new Pool({
   host: process.env.DB_HOST,
@@ -51,11 +62,8 @@ async function issueTokens(res, user) {
   );
 
   res.cookie("refresh_token", rawRefresh, {
-    httpOnly: true,
-    sameSite: "lax",
-    secure: process.env.NODE_ENV === "production",
+    ...refreshCookieOptions,
     maxAge: REFRESH_TOKEN_TTL_MS,
-    path: "/api/auth",
   });
 
   return accessToken;
@@ -134,7 +142,7 @@ app.post("/api/auth/refresh", async (req, res) => {
     );
     const record = rows[0];
     if (!record || new Date(record.expires_at) < new Date()) {
-      res.clearCookie("refresh_token", { path: "/api/auth" });
+      res.clearCookie("refresh_token", refreshCookieOptions);
       return res.status(401).json({ error: "Refresh token expired or invalid" });
     }
 
