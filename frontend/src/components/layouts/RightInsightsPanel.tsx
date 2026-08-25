@@ -41,7 +41,10 @@ export default function RightInsightsPanel({ applications }: Props) {
       }, {} as Record<string, number>)
     : stats?.applications ?? {};
 
-  const totalApps = Object.values(appCounts).reduce((s, n) => s + (n ?? 0), 0);
+  const totalApps = Object.values(appCounts).reduce<number>(
+    (s, n) => s + (n ?? 0),
+    0
+  );
 
   return (
     <div className="space-y-4">
