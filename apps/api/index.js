@@ -20,6 +20,8 @@ const ACCESS_TOKEN_TTL = "15m";
 const REFRESH_TOKEN_TTL_MS = 7 * 24 * 60 * 60 * 1000; // 7 days
 
 const app = express();
+app.set("trust proxy", 1);
+
 const PORT = process.env.PORT || process.env.API_PORT || 3001;
 const isProd = process.env.NODE_ENV === "production";
 const corsOrigin = process.env.CORS_ORIGIN
