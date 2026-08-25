@@ -58,3 +58,6 @@ coverage/
 *.sqlite3
 *.db
 .env
+.venv/
+node_modules/
+__pycache__/
